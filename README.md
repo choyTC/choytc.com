@@ -1,3 +1,9 @@
+Copyright (c) 2026 [choyTC]. All rights reserved.
+
+No one is permitted to copy, distribute, or modify this software or 
+any of its associated files without explicit written permission 
+from the copyright holder.
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
