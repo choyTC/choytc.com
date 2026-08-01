@@ -1,4 +1,4 @@
-#Legal information
+# Legal information
 
 Copyright (c) 2026 [choyTC]. All rights reserved.
 
