@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { 
   Globe as Github, 
   Share2 as Linkedin, 
@@ -68,9 +68,9 @@ export default function App() {
 
   const personalInfo = {
     name: "TC Choy",
-    title: "Computer Science Student & IT Technician",
-    tagline: "Current Computer Science university student, with a focus on Mobile and Web App developing and Vibe Coding.",
-    bio: "Looking for an entry-level position in a professional environment where I can utilize my skills as a team player and integrate strategies to develop and expand my interpersonal and teamwork abilities.",
+    title: "Software Engineering Student & IT Technician",
+    tagline: "Software Engineering Higher Diploma student with a focus on Software Project Management.",
+    bio: "I am looking for an entry-level position in a professional environment where I can utilize my skills as a team player and integrate strategies to develop and expand my interpersonal and teamwork abilities.",
     email: "osmentchoyqcb@gmail.com",
     github: "https://github.com/",
     linkedin: "https://linkedin.com/"
@@ -79,14 +79,6 @@ export default function App() {
   const experience = [
     {
       id: 1,
-      type: "edu",
-      role: "BSc (Hons) Computing",
-      company: "University of Northumbria at Newcastle (VTC SHAPE)",
-      period: "Sep 2026 - Present",
-      description: "Currently studying a Top-up degree program in Computer Science."
-    },
-    {
-      id: 2,
       type: "work",
       role: "Part-time IT Technician",
       company: "Ma On Shan Tsung Tsin Secondary School",
@@ -94,7 +86,7 @@ export default function App() {
       description: "Carrying out inventory work to ensure archive consistency, configuring devices, assembling equipment, and setting up network gears."
     },
     {
-      id: 3,
+      id: 2,
       type: "work",
       role: "IT Technician Intern",
       company: "Ma On Shan Tsung Tsin Secondary School",
@@ -102,23 +94,23 @@ export default function App() {
       description: "Reset and configured computers and tablets for staff and students. Assembled equipment and set up network gears for smooth connection."
     },
     {
-      id: 4,
+      id: 3,
       type: "edu",
       role: "Higher Diploma in Software Engineering",
       company: "Hong Kong Institute of Information Technology",
       period: "Sep 2024 - Jul 2026",
-      description: "Achieved an Award GPA score of 3.52 (4.0 scale). Attained A grade in 11 subjects including Programming & Software Project Management."
+      description: "Currently studying as a Year 2 student. Achieved a CGPA score of 3.77 until Sem 4. Attained A grade in 11 subjects including Programming & Software Project Management."
     },
     {
-      id: 5,
+      id: 4,
       type: "work",
       role: "Shop Assistant",
       company: "FOOD & LIFE COMPANIES LTD.",
       period: "Dec 2022 - Jul 2023",
-      description: "Carried out daily shop routines, general shroff, and cashier work. Responded to customer enquiries politely with excellent customer service quality."
+      description: "Carried general shroff and cashier work. Responded to customer enquires politely and professionally with excellent customer service quality."
     },
     {
-      id: 6,
+      id: 5,
       type: "edu",
       role: "Higher Diploma in Software Engineering",
       company: "Hong Kong Institute of Vocational Education",
@@ -126,20 +118,20 @@ export default function App() {
       description: "Completed Year 1 studies in Software Engineering."
     },
     {
-      id: 7,
+      id: 6,
       type: "edu",
       role: "Bachelor's Degree in Electrical Engineering",
       company: "City University of Hong Kong",
       period: "Sep 2019 - Jan 2021",
-      description: "Studied for 2 years before pivoting to computer science."
+      description: "Studied for 2 years before pivoting to software engineering."
     },
     {
-      id: 8,
+      id: 7,
       type: "work",
       role: "Branch Service Associate",
       company: "Hong Kong Jockey Club",
       period: "Aug 2019 - Mar 2021",
-      description: "Introduced products and services to customers, answered inquiries, and assisted customers in betting with care."
+      description: "Introduced products and services to customers, handled general shroff and cashier work, and assisted customers with care."
     }
   ];
 
@@ -167,7 +159,7 @@ export default function App() {
       title: "PDF Pager",
       description: "A web app that processes scanned A3 book spreads and automatically slices, crops, and organizes them into a clean A4 PDF format.",
       tags: ["Python", "PDF Processing", "Automation"],
-      links: { github: "https://github.com/", live: "https://pdf.choytc.com", isComingSoon: false },
+      links: { github: "https://github.com/", live: "#", isComingSoon: true },
       colSpan: "col-span-1",
       image: "https://images.unsplash.com/photo-1618042164219-62c820f10723?auto=format&fit=crop&q=80&w=800"
     },
@@ -176,37 +168,20 @@ export default function App() {
       title: "Windows 7 Minesweeper",
       description: "A retro recreation of the classic Windows 7 Minesweeper game, featuring authentic graphics, sound effects, and game logic.",
       tags: ["HTML5", "CSS", "Game Dev"],
-      links: { github: "https://github.com/", live: "https://mine.choytc.com", isComingSoon: false },
+      links: { github: "https://github.com/", live: "#", isComingSoon: true },
       colSpan: "col-span-1 md:col-span-2",
       image: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&q=80&w=800"
-    },
-    {
-      id: 5,
-      title: "Sushiro Checkout",
-      description: "Updated Sushiro Checkout with colorful UI and more functions.",
-      tags: ["Flutter", "Mobile App", "UI/UX", "Utility"],
-      links: { github: "https://github.com/", live: "https://sushiro.choytc.com", isComingSoon: false },
-      colSpan: "col-span-1",
-      image: "/06c8ba82-c021-4738-a06d-ec016c4deeba.jpg"
-    },
-    {
-      id: 6,
-      title: "Time Card Calculator",
-      description: "A time rate registry card total work hours calculator.",
-      tags: ["Web App", "Calculator", "Utility"],
-      links: { github: "https://github.com/", live: "https://time.choytc.com", isComingSoon: false },
-      colSpan: "col-span-1",
-      image: "/Screenshot 2026-09-25 165025.png"
     }
   ];
 
   const skills = [
     { category: "Frontend", items: ["HTML", "CSS", "JavaScript", "jQuery"] },
     { category: "Backend & DB", items: ["Java", "Python", "C#", "PHP", "SQL", "MySQL"] },
-    { category: "Tools & Skills", items: ["Vibe Coding (Gemini, Cursor)", "PC Assembling", "Software Project Management"] }
+    { category: "Tools & Skills", items: ["PC Assembling", "MS Office", "Software Project Management"] }
   ];
 
-  //const pngLogoUrl = 'https://i.ibb.co/3ykS5S4/TC-logo.png'; 
+  // REPLACE THIS WITH YOUR ACTUAL PNG URL/PATH
+  //const pngLogoUrl = '/TC-logo.png'; 
 
   return (
     <div className="min-h-screen bg-slate-950 text-slate-200 font-sans selection:bg-teal-500/30 overflow-hidden relative">
@@ -240,9 +215,9 @@ export default function App() {
           display: inline-block;
           transition: transform 0.3s ease;
           }
-          
       `}} />
 
+      {}
       <div 
         className={`fixed bottom-10 left-1/2 -translate-x-1/2 z-[100] transition-all duration-500 ease-out ${toastMessage ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10 pointer-events-none'}`}
       >
@@ -260,9 +235,13 @@ export default function App() {
 
       <nav className="fixed top-0 w-full z-50 bg-slate-950/50 backdrop-blur-md border-b border-white/10">
         <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+          
+          {/* This is your new PNG Logo Link */}
           <a href="#about" className="flex items-center group" aria-label="Home">
             <div className="themed-png-logo group-hover:scale-110" />
           </a>
+
+          {/* Desktop Menu Links */}
           <div className="hidden md:flex space-x-8 text-sm font-medium text-slate-400">
             <a href="#about" className="hover:text-teal-400 transition-colors">About</a>
             <a href="#experience" className="hover:text-teal-400 transition-colors">CV</a>
@@ -383,6 +362,7 @@ export default function App() {
                 <div className="group h-full bg-slate-900/50 backdrop-blur-sm border border-slate-800 p-8 rounded-2xl flex flex-col justify-between hover:bg-slate-800/50 hover:border-teal-500/50 transition-all duration-300 relative overflow-hidden">
                   <div className="absolute -inset-x-0 bottom-0 h-1 bg-gradient-to-r from-teal-400 to-purple-500 scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-300"></div>
                   
+                  {}
                   <div>
                     <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-6 gap-4">
                       <div className="w-12 h-12 bg-slate-800 rounded-lg flex items-center justify-center border border-slate-700 group-hover:border-teal-500/50 transition-colors shrink-0">
@@ -422,6 +402,7 @@ export default function App() {
                       {project.description}
                     </p>
                     
+                    {}
                     <div 
                       className={`w-full h-48 mb-6 rounded-xl overflow-hidden border border-slate-700/50 relative ${project.links.isComingSoon ? 'cursor-not-allowed' : 'cursor-pointer'}`}
                       onClick={(e) => {
@@ -433,6 +414,7 @@ export default function App() {
                         }
                       }}
                     >
+                      {/* Interactive overlay for images */}
                       <div className="absolute inset-0 bg-slate-900/20 group-hover:bg-transparent transition-colors z-10 pointer-events-none"></div>
                       <img 
                         src={project.image} 
@@ -442,6 +424,7 @@ export default function App() {
                     </div>
                   </div>
                   
+                  {}
                   <div className="flex flex-wrap gap-3 mt-auto">
                     {project.tags.map(tag => (
                       <span key={tag} className="text-xs font-mono text-purple-400">
